@@ -20,14 +20,14 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="h-full">
-    <div class="bg-blue-300 w-4/5 h-4/5 mx-auto mt-5 rounded-md shadow-xl">
+  <body class="bg-blue-300 h-screen">
+    <div class="mx-auto rounded-md">
       <div class="mb-5 pt-5">
         <h1 class="text-center text-2xl font-bold tracking-widest">
           My Text Editor
         </h1>
       </div>
-      <div class="w-4/5 mx-auto border-2 border-black">
+      <div class="w-4/5 mx-auto border-2 border-black bg-sky-300 rounded-md">
         <div class="border-b-black border-b-2 flex items-center flex-wrap">
           <div class="flex items-center gap-5 p-5 flex-1">
             <!-- Make font bold -->
@@ -90,12 +90,12 @@
             <!-- Font Size -->
             <input
               id="font-size"
-              class="w-10"
+              class="w-10 border-2 border-purple-500 outline-2 outline-purple-600 rounded-md"
               type="number"
               name=""
               id=""
               min="20"
-              step="5"
+              placeholder="20"
             />
             <!-- Font Color -->
             <input type="color" name="" id="font-color" />
@@ -108,7 +108,7 @@
             id="text-area"
             cols="80"
             rows="10"
-            class="w-full p-3"
+            class="w-full h-[350px] p-3"
           ></textarea>
         </div>
       </div>
