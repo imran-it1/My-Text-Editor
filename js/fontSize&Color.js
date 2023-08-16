@@ -1,3 +1,4 @@
+// Font Size
 const textArea = document.getElementById('text-area');
 const fontSizeFiled = document.getElementById('font-size');
 fontSizeFiled.addEventListener('click', function(){
@@ -7,7 +8,7 @@ fontSizeFiled.addEventListener('click', function(){
 })
 
 
-
+// Font Color
 const fontColor = document.getElementById('font-color');
 fontColor.addEventListener('input', function(){
     const fontColorValue = fontColor.value;
