@@ -20,7 +20,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="h-screen">
+  <body class="h-full">
     <div class="bg-blue-300 w-4/5 h-4/5 mx-auto mt-5 rounded-md shadow-xl">
       <div class="mb-5 pt-5">
         <h1 class="text-center text-2xl font-bold tracking-widest">
@@ -85,12 +85,20 @@
           </div>
 
           <div class="flex items-center gap-5 p-5 flex-1">
-            <!-- Font Size -->
-            <input class="w-10" type="number" name="" id="" />
             <!-- Font Icon -->
             <i class="fa-solid fa-font"></i>
+            <!-- Font Size -->
+            <input
+              id="font-size"
+              class="w-10"
+              type="number"
+              name=""
+              id=""
+              min="20"
+              step="5"
+            />
             <!-- Font Color -->
-            <input type="color" name="" id="" />
+            <input type="color" name="" id="font-color" />
           </div>
         </div>
         <div class="p-2">
@@ -106,5 +114,6 @@
       </div>
     </div>
     <script src="./js/fontStyle.js"></script>
+    <script src="./js/fontSize&Color.js"></script>
   </body>
 </html>
