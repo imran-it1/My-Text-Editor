@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Text Editor</title>
+    <!-- Tailwind and Daisy Ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="h-screen">
+    <div class="bg-blue-300 w-4/5 h-4/5 mx-auto mt-5 rounded-md shadow-xl">
+      <div class="mb-5 pt-5">
+        <h1 class="text-center text-2xl font-bold tracking-widest">
+          My Text Editor
+        </h1>
+      </div>
+      <div class="w-4/5 mx-auto border-2 border-black">
+        <div class="border-b-black border-b-2 flex items-center flex-wrap">
+          <div class="flex items-center gap-5 p-5 flex-1">
+            <!-- Make font bold -->
+            <span
+              id="font-bold"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-bold fa-sm"></i
+            ></span>
+            <!-- Make font italic -->
+            <span
+              id="font-italic"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-italic"></i
+            ></span>
+            <!-- Font Underline -->
+            <span
+              id="font-underline"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-underline"></i
+            ></span>
+          </div>
+          <div class="flex items-center gap-5 p-5 flex-1">
+            <!-- Align Left -->
+            <span
+              id="align-left"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-align-left"></i
+            ></span>
+            <!-- Align Center -->
+            <span
+              id="align-center"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-align-center"></i
+            ></span>
+            <!-- Align Justify -->
+
+            <span
+              id="text-justify"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-align-justify"></i
+            ></span>
+            <!-- Align Right -->
+            <span
+              id="align-right"
+              class="hover:bg-rose-500 hover:rounded-sm hover:text-white transition-all ease-in duration-200 px-2 py-1 hover:cursor-pointer"
+              href=""
+              ><i class="fa-solid fa-align-right"></i
+            ></span>
+          </div>
+
+          <div class="flex items-center gap-5 p-5 flex-1">
+            <!-- Font Size -->
+            <input class="w-10" type="number" name="" id="" />
+            <!-- Font Icon -->
+            <i class="fa-solid fa-font"></i>
+            <!-- Font Color -->
+            <input type="color" name="" id="" />
+          </div>
+        </div>
+        <div class="p-2">
+          <!-- Text Area -->
+          <textarea
+            name=""
+            id="text-area"
+            cols="80"
+            rows="10"
+            class="w-full p-3"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="./js/fontStyle.js"></script>
+  </body>
+</html>
